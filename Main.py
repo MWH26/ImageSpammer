@@ -12,7 +12,7 @@ ImageName = input("Choose an image name or type d for default: ")
 if ImageName == "d":
     ImageName = "Beypazari.png"
 
-BaseDir = input("Choose a directory or type d for deafult: ")
+BaseDir = input("Choose a directory or type d for default: ")
 if BaseDir == "d":
     BaseDir = "C://users//"
 
