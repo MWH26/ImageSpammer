@@ -48,3 +48,5 @@ download_image()
 find_directories()
 copy_images()
 cleaning_up()
+
+
