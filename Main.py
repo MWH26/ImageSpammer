@@ -26,7 +26,9 @@ def find_directories():
     global BaseDir
     global SubFolders
     print("Looking for directories...")
-    SubFolders = [f.path for f in os.scandir(BaseDir) if f.is_dir()]
+    for dirpath, dirs, files in os.walk(BaseDir):
+        print(dirpath)
+        SubFolders.append(dirpath)
     print(SubFolders)
 
 def copy_images():
@@ -46,4 +48,3 @@ download_image()
 find_directories()
 copy_images()
 cleaning_up()
-
